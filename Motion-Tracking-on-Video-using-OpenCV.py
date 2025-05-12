@@ -1,5 +1,5 @@
 import cv2
-cap = cv2.VideoCapture('GTA 6.mp4') 
+cap = cv2.VideoCapture('sample.mp4') 
 fgbg = cv2.createBackgroundSubtractorMOG2(history=500, varThreshold=100)
 while cap.isOpened():
     ret, frame = cap.read()
